@@ -904,7 +904,7 @@ int main(int argc, char * argv[])
 
     out_write_str("\n// File created by mod2gbt\n\n","\n; File created by mod2gbt\n\n");
 
-    out_write_str("#pragma bank=","\tSECTION \"");
+    out_write_str("#pragma bank ","\tSECTION \"");
     out_write_str("",label_name);
     out_write_str("","\", DATA, BANK[");
     out_write_dec(current_output_bank);
